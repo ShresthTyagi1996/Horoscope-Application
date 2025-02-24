@@ -2,6 +2,7 @@ body {
     display: flex;
     background-image: url(https://www.godwallpaper.in/downloading.aspx?pcod=WP0001581&size=1920x1080);
     background-size: cover;
+    background-position: center;
     align-items: center;
     justify-content: center;
     height: 98vh;
@@ -36,4 +37,19 @@ button {
     padding: 10px;
     border-radius: 5px;
     align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    button{
+        width: 85%;
+    }
+
+    .container > * {
+        margin: 10px 5px 10px 5px;
+        box-sizing: border-box;
+    }
 }
